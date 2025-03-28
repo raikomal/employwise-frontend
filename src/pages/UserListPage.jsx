@@ -31,7 +31,7 @@ function UsersListPage() {
         setTotalPages(response.total_pages);
       }
     } catch (err) {
-      setError("Failed to load users.");
+      setError(err.message || "Failed to load users.");
     } finally {
       setLoading(false);
     }
@@ -56,7 +56,7 @@ function UsersListPage() {
       setUsers(users.filter((user) => user.id !== id));
       setSuccess("User deleted successfully.");
     } catch (err) {
-      setError("Failed to delete user.");
+      setError(err.message || "Failed to delete user.");
     }
   };
 
@@ -71,7 +71,7 @@ function UsersListPage() {
       setEditingUser(null);
       setSuccess("User updated successfully.");
     } catch (err) {
-      setError("Failed to update user.");
+      setError(err.message || "Failed to update user.");
     }
   };
 
