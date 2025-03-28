@@ -56,7 +56,7 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/employwise-frontend.git
+   git clone https://github.com/raikomal/employwise-frontend.git
    cd employwise-frontend
    ```
 2. Install dependencies:
